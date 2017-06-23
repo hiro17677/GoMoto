@@ -16,3 +16,14 @@
 
 @import "bootstrap-sprockets" ;
 @import "bootstrap" ;
+@import "font-awesome" ;
+
+// ---google map--
+
+#map {
+  width:100%; //寬，必須要有！
+  height:450px; //高，必須要有！
+  margin: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  }

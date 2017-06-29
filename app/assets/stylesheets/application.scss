@@ -20,10 +20,141 @@
 
 // ---google map--
 
-#map {
-  width:100%; //寬，必須要有！
-  height:450px; //高，必須要有！
-  margin: 40px;
-  margin-left: auto;
-  margin-right: auto;
+  #map {
+    width:100%; //寬，必須要有！
+    height:450px; //高，必須要有！
+    margin: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    }
+
+  // ---welcome---
+
+  .thumbnail {
+    display:inline-block;
+    position:relative;
+    width:200px;
+    height:200px;
+    overflow:hidden;
+    border-radius:50%;
+      .thumbnail img{
+        width:auto;
+        height:100%;
+        margin-left:-50%;
+        }
+      }
+
+      .service-image{
+        img{
+          width: 200px ;
+        }
+      }
+
+      // ---navbar---
+
+  .navbar-default{
+    border-radius:0;
+    height: 50px;
+    margin-bottom: 0;
+    color: #FAFAFA;
+    }
+
+    // ---輪播圖片---
+  .carousel{
+    margin-left: -15px;
+    margin-right: -15px;
+    margin-top: -5px;
+    padding-bottom: -15px;
+   }
+
+  //  ---顧客回饋---
+  #content-section-3>.content-3 {
+	text-align: center;
+	position: relative;
+	width: 960px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 50px;
+}
+
+.feature-title {
+	margin-bottom: 50px;
+}
+
+.feature-block {
+    display: block;
+    width: 290px;
+    position: relative;
+    margin: 20px 15px 0;
+    float: left;
+}
+
+.customer-block-left, .customer-block-right {
+	float:left;
+	width: 500px;
+	padding-left: 30px;
+}
+
+.customer-block-right {
+	width: 380px;
+	padding-left: 30px;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+  #content-section-3 .group {
+	padding-bottom: 60px;
+}
+
+
+.customer-block-left .img, .customer-block-right .img {
+	float: left;
+	width: 90px;
+
+	img {
+		width: 80px;
+		height: 80px;
+		border: 1px solid #eee;
+		box-shadow: 2px 3px 4px gray;
+		border-radius: 50%;
+	}
+}
+
+.customer-block-left .name, .customer-block-right .name {
+	float: left;
+	width: auto;
+	padding: 0 30px;
+
+	span {
+		font-size: 1.15em;
+		line-height: 22px;
+		font-weight: bold;
+	}
+
+	p {
+		padding-top: 13px;
+		line-height: 25px;
+		font-size: 1em;
+		color: #666;
+	}
+}
+
+.customer-block-left .talk, .customer-block-right .talk {
+	padding-top: 30px;
+	clear: both;
+	width: 350px;
+}
+
+//
+
+.service-image {
+  float: left;
+	width: 90px;
+
+	img {
+		width: 80px;
+		height: 80px;
   }
+}

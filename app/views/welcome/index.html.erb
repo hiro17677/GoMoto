@@ -77,11 +77,11 @@
       <!-- 服務內容 -->
       <div class="container">
         <div class="section-title-area">
-          <h5 class="section-subtitle">Services</h5>
-          <h5 class="section-title">服務內容</h5>
+          <h2 class="section-subtitle">Services</h2>
+          <h3 class="section-title">服務內容</h3>
         </div>
         <div class="row">
-          <div class="col-sm-6 col-lg-6">
+          <div class="col-xs-6 col-lg-6">
             <div class="service-item">
               <div class="service-image">
                 <img src="http://i.imgur.com/8EaAl2w.png" alt="...">
@@ -92,7 +92,7 @@
               </div>
             </div>
           </div>
-          <div class="col-sm-6 col-lg-6">
+          <div class="col-xs-6 col-lg-6">
             <div class="service-item">
               <div class="service-image">
                 <img src="http://i.imgur.com/8EaAl2w.png" alt="...">
@@ -103,7 +103,7 @@
               </div>
             </div>
           </div>
-          <div class="col-sm-6 col-lg-6">
+          <div class="col-xs-6 col-lg-6">
             <div class="service-item">
               <div class="service-image">
                 <img src="http://i.imgur.com/8EaAl2w.png" alt="...">
@@ -114,7 +114,7 @@
               </div>
             </div>
           </div>
-          <div class="col-sm-6 col-lg-6">
+          <div class="col-xs-6 col-lg-6">
             <div class="service-item">
               <div class="service-image">
                 <img src="http://i.imgur.com/8EaAl2w.png" alt="...">
@@ -128,55 +128,63 @@
         </div>
       </div>
       <!-- 客戶回饋 -->
-      <div class="col-sm-12">
       <div id="content-section-3" >
     		<div class="content-3 clearfix">
     			<div class="group">
     				<h2>顧客回饋</h2>
     				<div class="short-line"></div>
     			</div>
-    			<div class="customer-block-left">
-    				<div class="top">
-    					<div class="img">
-    						<img src="http://i.imgur.com/2ik1CwF.jpg" alt="">
-    					</div>
-    					<div class="name">
-    						<span>Hank Pan</span>
-    						<p>開幕第一位客人</p>
-    					</div>
-    				</div>
-    				<div class="talk">
-    						跟這裡的老闆讓我感到非常舒服，就算是不起眼的瑕疵老闆也會告知，並詢問是否接受，並不會像有的店家，進來就是要強迫你購買。
-    				</div>
-    			</div>
-    			<div class="customer-block-right">
-    				<div class="top">
-    					<div class="img">
-                <img src="http://i.imgur.com/2ik1CwF.jpg" alt="">
-    					</div>
-    					<div class="name">
-    						<span>Hank Pan</span>
-    						<p>開幕第一位客人</p>
-    					</div>
-    				</div>
-    				<div class="talk">
-              跟這裡的老闆讓我感到非常舒服，就算是不起眼的瑕疵老闆也會告知，並詢問是否接受，並不會像有的店家，進來就是要強迫你購買。
-    				</div>
-    			</div>
+          <div class="row">
+            <div class="col-xs-6 col-xs-offset-3 col-md-6">
+        			<div class="customer-block-left">
+        				<div class="top">
+        					<div class="img">
+        						<img src="http://i.imgur.com/2ik1CwF.jpg" alt="">
+        					</div>
+        					<div class="name">
+        						<span>林雷孟</span>
+        						<p>開幕第一位客人</p>
+        					</div>
+        				</div>
+        				<div class="talk">
+        						跟這裡的老闆讓我感到非常舒服，就算是不起眼的瑕疵老闆也會告知，並詢問是否接受，並不會像有的店家，進來就是要強迫你購買。
+        				</div>
+        			</div>
+            </div>
+            <div class="col-xs-6 col-xs-offset-3 col-md-6">
+        			<div class="customer-block-right">
+        				<div class="top">
+        					<div class="img">
+                    <img src="http://i.imgur.com/2ik1CwF.jpg" alt="">
+        					</div>
+        					<div class="name">
+        						<span>林雷孟</span>
+        						<p>開幕第一位客人</p>
+        					</div>
+        				</div>
+        				<div class="talk">
+                  跟這裡的老闆讓我感到非常舒服，就算是不起眼的瑕疵老闆也會告知，並詢問是否接受，並不會像有的店家，進來就是要強迫你購買。
+        				</div>
+        			</div>
+            </div>
+          </div>
     		</div>
 	    </div>
-      </div>
       <!-- Google Map -->
       <h4>地圖</h4>
       <div id="map"></div>
     </div>
   </div>
   <script>
-    var map;
-    function initMap() {
-      map = new google.maps.Map(document.getElementById('map'), {
-        center: {lat: 24.992923, lng: 121.511586},
-        zoom: 18
+  function initMap() {
+      var uluru = {lat: 24.992897, lng: 121.511215};
+      var map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 18,
+        center: uluru
+      });
+      var marker = new google.maps.Marker({
+        position: uluru,
+        map: map
       });
     }
   </script>

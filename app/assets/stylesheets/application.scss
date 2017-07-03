@@ -18,8 +18,18 @@
 @import "bootstrap" ;
 @import "font-awesome" ;
 
-// ---google map--
+// ---body---
+  .span{
+    vertical-align: baseline;
+  }
 
+  .fl{
+    float: right;
+    list-style-type: none;
+  }
+
+
+// ---google map--
   #map {
     width:100%; //寬，必須要有！
     height:450px; //高，必須要有！
@@ -60,10 +70,9 @@
     }
 
     // ---輪播圖片---
-  .carousel{
+  .section-title{
     margin-left: -15px;
     margin-right: -15px;
-    margin-top: -5px;
     padding-bottom: -15px;
    }
 

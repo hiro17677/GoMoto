@@ -1,192 +1,131 @@
-<div class="container-fluid">
-  <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
-    <ol class="carousel-indicators">
-      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-      <li data-target="#myCarousel" data-slide-to="1"></li>
-      <li data-target="#myCarousel" data-slide-to="2"></li>
-    </ol>
+<div class="welcome-box">
+  <!--===== 首圖 =====-->
+  <section class="intro-box">
     <div class="row">
-      <div class="carousel-inner" role="listbox">
-        <div class="item active">
-          <img src="http://i.imgur.com/zUaWn7S.jpg" alt="...">
-          <div class="carousel-caption">
-            <h2>"Lorem ipsum dolor sit amet."<br><span style="font-style:normal;"></span></h2>
-            <a class="feature-button" href="#" tabindex="-1">聯絡我們</a>
-          </div>
-        </div>
+      <div class="col-md-12">
         <div class="item">
-          <img src="http://i.imgur.com/wCwizta.jpg" alt="...">
+          <%= image_tag("intro_2.jpg") %>
           <div class="carousel-caption">
-            <h2>"Lorem ipsum dolor sit amet."<br><span style="font-style:normal;"></span></h2>
-              <a class="feature-button" href="#" tabindex="-1">聯絡我們</a>
-          </div>
-        </div>
-        <div id="carousel-3" class="item">
-          <img src="http://i.imgur.com/5DxNXbg.jpg" alt="...">
-          <div class="carousel-caption">
-            <h2>"Lorem ipsum dolor sit amet."<br><span style="font-style:normal;"></span></h2>
-              <a class="feature-button" href="#" tabindex="-1">聯絡我們</a>
+            <h3>高價收車</h3>
+            <p>最便利的收購中古機車服務</p>
+            <%= link_to('立即聯絡', 'contact', class:'btn btn-push' ) %>
           </div>
         </div>
       </div>
-    </div>
-  </div>
-  <!-- 服務特色 -->
-  <div class="container">
-    <div class="section-title-area">
-      <h5 class="section-subtitle text-center">Feature</h5>
-      <h5 class="section-title text-center">服務特色</h5>
-    </div>
-    <div class="section-content">
-      <div class="row">
-        <div class="feature-item col-lg-3 col-sm-6">
-          <div class="thumbnail">
-            <img src="http://i.imgur.com/6XSzX1H.png" alt="...">
-          </div>
-          <div class="caption">
-            <h3>安心至上</h3>
-          </div>
-        </div>
-        <div class="feature-item col-lg-3 col-sm-6">
-          <div class="thumbnail">
-            <img src="http://i.imgur.com/3vFpX96.png" alt="...">
-          </div>
-          <div class="caption">
-            <h3>安心至上</h3>
-          </div>
-        </div>
-        <div class="feature-item col-lg-3 col-sm-6">
-          <div class="thumbnail">
-            <img src="http://i.imgur.com/FhTkGj1.png" alt="...">
-          </div>
-          <div class="caption">
-            <h3>安心至上</h3>
-          </div>
-        </div>
-        <div class="feature-item col-lg-3 col-sm-6">
-          <div class="thumbnail">
-            <img src="http://i.imgur.com/mnfwyK3.png" alt="...">
-          </div>
-          <div class="caption">
-            <h3>安心至上</h3>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- 服務內容 -->
-    <div class="container">
-      <div class="section-title-area">
-        <h2 class="section-subtitle">Services</h2>
-        <h3 class="section-title">服務內容</h3>
-      </div>
-      <div class="row">
-        <div class="col-xs-6 col-lg-6">
-          <div class="service-item">
-            <div class="service-image">
-              <img src="http://i.imgur.com/8EaAl2w.png" alt="...">
-            </div>
-            <div class="service-content">
-              <h4>Lorem ipsum.</h4>
-              <p>Lorem ipsum dolor sit amet.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-xs-6 col-lg-6">
-          <div class="service-item">
-            <div class="service-image">
-              <img src="http://i.imgur.com/8EaAl2w.png" alt="...">
-            </div>
-            <div class="service-content">
-              <h4>Lorem ipsum.</h4>
-              <p>Lorem ipsum dolor sit amet.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-xs-6 col-lg-6">
-          <div class="service-item">
-            <div class="service-image">
-              <img src="http://i.imgur.com/8EaAl2w.png" alt="...">
-            </div>
-            <div class="service-content">
-              <h4>Lorem ipsum.</h4>
-              <p>Lorem ipsum dolor sit amet.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-xs-6 col-lg-6">
-          <div class="service-item">
-            <div class="service-image">
-              <img src="http://i.imgur.com/8EaAl2w.png" alt="...">
-            </div>
-            <div class="service-content">
-              <h4>Lorem ipsum.</h4>
-              <p>Lorem ipsum dolor sit amet.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- 客戶回饋 -->
-    <div id="content-section-3" >
-    	<div class="content-3 clearfix">
-    		<div class="group">
-    			<h2>顧客回饋</h2>
-    			<div class="short-line"></div>
-    		</div>
+
+  <!--===== 品牌故事 =====-->
+  <section class="story-box">
+    <div class="row">
+      <div class="col-md-10 col-md-offset-1">
+        <h2>服務項目</h2> <!-- 區塊顯示 -->
+        <h1>二手機車收購</h1> <!-- 服務項目 -->
+        <div class="short-line"></div> <!-- 分隔線 -->
         <div class="row">
-          <div class="col-xs-12 col-md-6">
-        		<div class="customer-block-left">
-      				<div class="top">
-      					<div class="img">
-      						<img src="http://i.imgur.com/2ik1CwF.jpg" alt="">
-      					</div>
-        				<div class="name">
-        					<span>林雷孟</span>
-        					<p>開幕第一位客人</p>
-        				</div>
-        			</div>
-      				<div class="talk">
-      						跟這裡的老闆讓我感到非常舒服，就算是不起眼的瑕疵老闆也會告知，並詢問是否接受，並不會像有的店家，進來就是要強迫你購買。
-      				</div>
-      			</div>
-          </div>
-          <div class="col-xs-12 col-md-6">
-      			<div class="customer-block-right">
-      				<div class="top">
-      					<div class="img">
-                  <img src="http://i.imgur.com/2ik1CwF.jpg" alt="">
-        				</div>
-        				<div class="name">
-        					<span>林雷孟</span>
-        					<p>開幕第一位客人</p>
-        				</div>
-      				</div>
-      				<div class="talk">
-                跟這裡的老闆讓我感到非常舒服，就算是不起眼的瑕疵老闆也會告知，並詢問是否接受，並不會像有的店家，進來就是要強迫你購買。
-      				</div>
-        		</div>
+          <div class="col-md-8 col-md-offset-2">
+            <p>我們希望為大家提供便利、高價收購中古機車的服務， <br>
+              讓大家處理二手摩托車的時候， <br>
+              不會感到麻煩， <br>
+              並且提供一個雙方都滿意的價格。 </p> <!-- 服務宗旨 -->
           </div>
         </div>
-    	</div>
-	   </div>
-    <!-- Google Map -->
-    <h4>地圖</h4>
-    <div id="map"></div>
+        <hr />
+      </div>
+    </div>
+  </section>
+
+  <!--===== 服務優勢 =====-->
+  <section class="service-box">
+    <div class="row">
+      <div class="col-md-10 col-md-offset-1">
+        <h2>服務優勢</h2> <!-- 副標題 -->
+        <div class="short-line"></div> <!-- 分隔線 -->
+        <div class="row">
+          <div class="col-md-4 col-sm-4 col-xs-12">
+            <div class="box">
+              <%= image_tag("service_1.png") %> <!-- 圖示 -->
+              <h3>免費線上估價</h3> <!-- 標題 -->
+              <p>你想知道你目前騎的機車目前行情嗎？提供機車照片、出廠年份、車況和有無改裝品，即可立即回報行情價格</p> <!-- 内文 -->
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-4 col-xs-12">
+            <div class="box">
+              <%= image_tag("service_2.png") %>
+              <h3>全台皆可</h3>
+              <p>我們服務範圍涵蓋：基隆市、嘉義市、台北市、嘉義縣、新北市、台南市、桃園縣、高雄市、新竹市、屏東縣、新竹縣、台東縣、苗栗縣、花蓮縣、台中市、宜蘭縣、彰化縣、南投縣、雲林縣</p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-4 col-xs-12">
+            <div class="box">
+              <%= image_tag("service_3.png") %>
+              <h3>高價收購</h3>
+              <p>一定可以找到一個雙方都很滿意的價錢，並且提供到府服務。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--===== 用戶反饋 =====-->
+  <section class="feedback-box">
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2">
+        <h2>用戶反饋</h2> <!-- 副標題 -->
+        <div class="short-line"></div> <!-- 分隔線 -->
+        <div id="feedback" class="carousel slide" data-ride="carousel">
+          <!--===== 輪播按鈕 =====-->
+          <ol class="carousel-indicators">
+            <li data-target="#feedback" data-slide-to="0" class="active"></li>
+            <li data-target="#feedback" data-slide-to="1"></li>
+            <li data-target="#feedback" data-slide-to="2"></li>
+          </ol>
+
+          <!--===== 輪播內容 =====-->
+          <div class="carousel-inner" role="listbox">
+            <div class="item active">
+              <p>二手價格超滿意！比其他間都還要優</p>
+              <%= image_tag("feedback_1.png") %> <!-- 圖片 -->
+              <strong>Eddie - 上班族</strong> <!-- 介紹 -->
+            </div>
+            <div class="item">
+              <p>二手價格超滿意！比其他間都還要優</p>
+              <%= image_tag("feedback_2.png") %>
+              <strong>Hank - 大學生</strong>
+            </div>
+            <div class="item">
+              <p>二手價格超滿意！比其他間都還要優</p>
+              <%= image_tag("feedback_2.png") %>
+              <strong>Kobe - 家庭主婦</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--===== 立即聯絡 =====-->
+  <section class="push-box">
+    <%= link_to('立即聯絡', 'contact', class:'btn btn-push' ) %>
+  </section>
+<!--==== google map ====-->
+  <div id="map">
   </div>
 </div>
-  <script>
-  function initMap() {
-      var uluru = {lat: 24.992897, lng: 121.511215};
-      var map = new google.maps.Map(document.getElementById('map'), {
-        zoom: 18,
-        center: uluru
-      });
-      var marker = new google.maps.Marker({
-        position: uluru,
-        map: map
-      });
-    }
-  </script>
-  <script async defer
+
+<script type="text/javascript" src="https://embed.modernapp.co/chat?code=f7fc60ed7e2f37e9a5f57c0b22302e3d"></script>
+<script>
+      function initMap() {
+        var uluru = {lat: 24.992872, lng: 121.511586};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 18,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDrDH4440GJiFyJYiDboAgsdjlTaVXBEEw&callback=initMap">
-  </script>
+    </script>

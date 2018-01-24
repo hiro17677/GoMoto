@@ -1,0 +1,38 @@
+<div class="welcome-box">
+  <div class="row">
+    <div class="contact">
+      <div class="col-md-12">
+        <div class="common-width">
+          <div class="read-width">
+            <h1>聯絡方式</h1>
+            <hr>
+            <br>
+            <p>聯絡電話：<a href="tel:+886-926-089-621">0926-089-621</a></p>
+            <p>Line@:<a href="https://line.me/R/ti/p/%40xtc1540p">@xtc1540p</a></p>
+            <p>臉書專頁：<a href="https://www.facebook.com/squ3798p/">高價專業收購中古二手機車線上估價網</a></p>
+            <p>地址：新北市中和區景平路358號</p>
+            <div id="map">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+      function initMap() {
+        var uluru = {lat: 24.992872, lng: 121.511586};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 18,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDrDH4440GJiFyJYiDboAgsdjlTaVXBEEw&callback=initMap">
+    </script>
